@@ -5,7 +5,6 @@
 <script>
 import ComputedGetSample from "../components/ComputedGetSample";
 export default {
-  name: "App",
   components: {
     ComputedGetSample,
   },

@@ -13,7 +13,8 @@ const routes = [
 // You can pass in additional options here, but let's
 // keep it simple for now.
 const router = createRouter({
-  history: createWebHistory,
+  history: createWebHistory(),
+  mode: "history",
   routes
 });
 
