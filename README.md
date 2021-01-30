@@ -1,4 +1,4 @@
-# t
+# Program Easily Blog - Vue Basics
 
 ## Project setup
 ```
