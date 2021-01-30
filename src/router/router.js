@@ -1,12 +1,14 @@
 import { createWebHistory, createRouter } from "vue-router";
 
 import ComputedGetDemo from "../page/ComputedGetDemo";
+import ComputedSetDemo from "../page/ComputedSetDemo";
 import Home from "../components/Home";
 // Each route should map to a component.
 // We'll talk about nested routes later.
 const routes = [
   { path: "/", component: Home },
-  { path: "/computedgetdemo", component: ComputedGetDemo }
+  { path: "/computedgetdemo", component: ComputedGetDemo },
+  { path: "/computedsetdemo", component: ComputedSetDemo }
 ];
 
 // Create the router instance and pass the `routes` option
