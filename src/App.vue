@@ -1,16 +1,10 @@
 <template>
-<ComputedGetSample firstName="Eric" lastName="Thomas" />
+  <router-view> </router-view>
 </template>
 
 <script>
-import ComputedGetSample from './components/ComputedGetSample'
-export default {
-  name: "App",
-  components: {
-    ComputedGetSample
-  },
-};
-</script>
+export default {};
+</script>>
 
 <style>
 #app {
