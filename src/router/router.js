@@ -1,5 +1,6 @@
 import { createWebHistory, createRouter } from "vue-router";
 
+import GetCurrentInstanceDemo from "../page/GetCurrentInstanceDemo";
 import ComputedGetDemo from "../page/ComputedGetDemo";
 import ComputedSetDemo from "../page/ComputedSetDemo";
 import ComputedExpressionDemo from "../page/ComputedExpressionDemo";
@@ -10,7 +11,8 @@ const routes = [
   { path: "/", component: Home },
   { path: "/computedgetdemo", component: ComputedGetDemo },
   { path: "/computedsetdemo", component: ComputedSetDemo },
-  { path: "/computedexpdemo", component: ComputedExpressionDemo }
+  { path: "/computedexpdemo", component: ComputedExpressionDemo },
+  { path: "/getcurrentinstancedemo", component: GetCurrentInstanceDemo }
 ];
 
 // Create the router instance and pass the `routes` option
