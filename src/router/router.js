@@ -1,10 +1,13 @@
 import { createWebHistory, createRouter } from "vue-router";
 
-import GetCurrentInstanceDemo from "../page/GetCurrentInstanceDemo";
 import ComputedGetDemo from "../page/ComputedGetDemo";
 import ComputedSetDemo from "../page/ComputedSetDemo";
 import ComputedExpressionDemo from "../page/ComputedExpressionDemo";
 import Home from "../components/Home";
+import ProvideAndInjectDemo from "../components/provideinject/Page";
+import ProvideAndInjectSetupDemo from "../components/provideinject-setup/Page";
+import ProvideAndInjectReactiveDemo from "../components/provideinject-reactive/Page";
+
 // Each route should map to a component.
 // We'll talk about nested routes later.
 const routes = [
@@ -12,7 +15,12 @@ const routes = [
   { path: "/computedgetdemo", component: ComputedGetDemo },
   { path: "/computedsetdemo", component: ComputedSetDemo },
   { path: "/computedexpdemo", component: ComputedExpressionDemo },
-  { path: "/getcurrentinstancedemo", component: GetCurrentInstanceDemo }
+  { path: "/provideandinjectdemo", component: ProvideAndInjectDemo },
+  { path: "/provideandinjectsetupdemo", component: ProvideAndInjectSetupDemo },
+  {
+    path: "/provideandinjectreactivedemo",
+    component: ProvideAndInjectReactiveDemo
+  }
 ];
 
 // Create the router instance and pass the `routes` option
