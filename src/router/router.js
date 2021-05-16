@@ -8,6 +8,7 @@ import ProvideAndInjectDemo from "../components/provideinject/Page";
 import ProvideAndInjectSetupDemo from "../components/provideinject-setup/Page";
 import ProvideAndInjectReactiveDemo from "../components/provideinject-reactive/Page";
 import ProvideAndInjectDynamicDemo from "../components/provideinject-dynamic/Page";
+import lifeCycleHooks from "../components/HooksExampleComponent";
 
 // Each route should map to a component.
 // We'll talk about nested routes later.
@@ -25,6 +26,10 @@ const routes = [
   {
     path: "/provideandinjectdynamicdemo",
     component: ProvideAndInjectDynamicDemo
+  },
+  {
+    path: "/lifeCycleHooks",
+    component: lifeCycleHooks
   }
 ];
 
