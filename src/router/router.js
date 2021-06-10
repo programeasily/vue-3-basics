@@ -3,6 +3,7 @@ import { createWebHistory, createRouter } from "vue-router";
 import ComputedGetDemo from "../page/ComputedGetDemo";
 import ComputedSetDemo from "../page/ComputedSetDemo";
 import ComputedExpressionDemo from "../page/ComputedExpressionDemo";
+import DynamicComponentDemo from "../page/DynamicComponentDemo";
 import Home from "../components/Home";
 import ProvideAndInjectDemo from "../components/provideinject/Page";
 import ProvideAndInjectSetupDemo from "../components/provideinject-setup/Page";
@@ -30,7 +31,8 @@ const routes = [
   {
     path: "/lifeCycleHooks",
     component: lifeCycleHooks
-  }
+  },
+  { path: "/dynamicComponentDemo", component: DynamicComponentDemo },
 ];
 
 // Create the router instance and pass the `routes` option
