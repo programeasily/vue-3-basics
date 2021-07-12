@@ -10,6 +10,8 @@ import ProvideAndInjectSetupDemo from "../components/provideinject-setup/Page";
 import ProvideAndInjectReactiveDemo from "../components/provideinject-reactive/Page";
 import ProvideAndInjectDynamicDemo from "../components/provideinject-dynamic/Page";
 import lifeCycleHooks from "../components/HooksExampleComponent";
+import TeleportDemo from "../page/TeleportDemo";
+import TeleportMultipleDemo from "../page/TeleportMultipleDemo";
 
 // Each route should map to a component.
 // We'll talk about nested routes later.
@@ -22,17 +24,25 @@ const routes = [
   { path: "/provideandinjectsetupdemo", component: ProvideAndInjectSetupDemo },
   {
     path: "/provideandinjectreactivedemo",
-    component: ProvideAndInjectReactiveDemo
+    component: ProvideAndInjectReactiveDemo,
   },
   {
     path: "/provideandinjectdynamicdemo",
-    component: ProvideAndInjectDynamicDemo
+    component: ProvideAndInjectDynamicDemo,
   },
   {
     path: "/lifeCycleHooks",
-    component: lifeCycleHooks
+    component: lifeCycleHooks,
   },
   { path: "/dynamicComponentDemo", component: DynamicComponentDemo },
+  {
+    path: "/teleportdemo",
+    component: TeleportDemo,
+  },
+  {
+    path: "/teleportmultipledemo",
+    component: TeleportMultipleDemo,
+  },
 ];
 
 // Create the router instance and pass the `routes` option
@@ -41,7 +51,7 @@ const routes = [
 const router = createRouter({
   history: createWebHistory(),
   mode: "history",
-  routes
+  routes,
 });
 
 export default router;
